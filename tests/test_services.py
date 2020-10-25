@@ -7,7 +7,7 @@ from fastapi.testclient import TestClient
 from notification.main import app
 from datetime import datetime
 
-
+#test
 def test_connectivity(client):
     response = client.get("/service_info")
     assert response.status_code == 200
