@@ -23,5 +23,5 @@ docker run -it --rm --name todo todo-notification:release-1
 ## Running
 
 ```
-python -m uvicorn --host=0.0.0.0 --port=8000 --reload notification.main:app
+python -m uvicorn --host=0.0.0.0 --port=8000 --reload notification.main:app  
 ```
