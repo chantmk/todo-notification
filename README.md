@@ -8,7 +8,7 @@ To build the container for this module, use the following command:
 docker build -t todo-notification:release-1 .
 ```
 
-To perform the test using pytest
+To perform the test using pytest 
 with the script in the source:
 ```
 docker run -it --rm --name notification -p 8000:8000 todo-notification:release-1 /bin/sh -c "cd /root/todo ; export PYTHONPATH=/root/todo ; pytest tests/test_services.py::test_connectivity"
